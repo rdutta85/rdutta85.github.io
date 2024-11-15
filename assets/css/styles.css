@@ -99,3 +99,11 @@ h2 {
         transform: translateY(0);
     }
 }
+
+/* Navigation Bar Styles */
+nav ul li a.active {
+    background-color: #4a90e2; /* Highlight color */
+    color: #fff;
+    font-weight: bold;
+    pointer-events: none; /* Disable clicking on the active link */
+}

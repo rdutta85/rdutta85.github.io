@@ -5,10 +5,30 @@
     <title>Honors & Awards - Rishav Dutta</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+<script>
+    // Get the current page's filename
+    const currentPage = location.pathname.split("/").pop();
+
+    // Highlight the corresponding navigation link
+    document.querySelectorAll(".nav-link").forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+</script>
 <body>
     <header>
         <h1>Honors & Awards</h1>
     </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link" id="home-link">Home</a></li>
+            <li><a href="about.html" class="nav-link" id="about-link">About</a></li>
+            <li><a href="experience.html" class="nav-link" id="experience-link">Experience</a></li>
+            <li><a href="honors.html" class="nav-link" id="honors-link">Honors & Awards</a></li>
+            <li><a href="contact.html" class="nav-link" id="contact-link">Contact</a></li>
+        </ul>
+    </nav>
     <section>
         <ul>
             <li>Technical Citation 2019: For exemplary contributions at IIT Bombay.</li>
