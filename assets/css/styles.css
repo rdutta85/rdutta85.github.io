@@ -54,23 +54,14 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
-/* Section Styles */
-/*section {
-    max-width: 800px;
+section {
+    max-width: 90%; /* Allow content to stretch wider on larger screens */
     margin: 3em auto;
     padding: 2em;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease;
-}*/
-section {
-    max-width: 90%; /* Allow content to stretch wider on larger screens */
-    margin: 2em auto;
-    padding: 2em;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Typography */
