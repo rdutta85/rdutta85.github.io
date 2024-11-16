@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 /* Section Styles */
-section {
+/*section {
     max-width: 800px;
     margin: 3em auto;
     padding: 2em;
@@ -63,6 +63,14 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease;
+}*/
+section {
+    max-width: 90%; /* Allow content to stretch wider on larger screens */
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Typography */
@@ -183,3 +191,52 @@ nav ul li a.active {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
+
+/* Specific to Timeline Wrapper */
+#timeline-wrapper {
+    max-width: 95%; /* Utilize more screen space */
+    margin: 2em auto;
+}
+
+/* Responsive for Extra-Large Screens */
+@media (min-width: 1600px) {
+    section, #timeline-wrapper {
+        max-width: 80%; /* Slightly narrower for readability on very large screens */
+    }
+}
+
+/* For Small Screens (Mobile) */
+@media (max-width: 768px) {
+    header {
+        padding: 1em;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0.5em 0;
+    }
+
+    #timeline-wrapper {
+        flex-direction: column; /* Stack timeline and controls vertically */
+        align-items: center;
+    }
+
+    .timeline-container {
+        padding: 0;
+        overflow-x: scroll; /* Enable horizontal scrolling */
+    }
+
+    .scroll-button {
+        display: none; /* Hide buttons on small screens; use swipe scrolling */
+    }
+
+    .timeline-item {
+        width: 90%; /* Adjust milestone size for mobile */
+        margin: 0 auto; /* Center items */
+    }
+}
+
