@@ -7,6 +7,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+<script>
+    const timelineContainer = document.querySelector('.timeline-container');
+
+    // Scroll Left
+    document.getElementById('scroll-left').addEventListener('click', () => {
+        timelineContainer.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    // Scroll Right
+    document.getElementById('scroll-right').addEventListener('click', () => {
+        timelineContainer.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+</script>
 <body>
     <header>
         <h1>Rishav Dutta</h1>
@@ -23,6 +36,35 @@
     <section id="intro">
         <h2>Welcome to My Website</h2>
         <p>This website showcases my academic and professional achievements, including projects and publications in AI and autonomous systems. Explore my experience in deep learning, autonomous robotics, and innovative AI applications.</p>
+    </section>
+    <section id="timeline">
+        <h2>Career Timeline</h2>
+        <!-- Timeline Container -->
+        <div id="timeline-wrapper">
+            <button id="scroll-left" class="scroll-button">←</button>
+            <div class="timeline-container">
+                <!-- Example Milestone -->
+                <div class="timeline-item">
+                    <a href="experience.html">
+                        <img src="assets/img/milestone1.jpg" alt="Mahindra Driverless Car Project">
+                        <div class="item-details">
+                            <h3>Mahindra Driverless Car Project</h3>
+                            <p>Team Leader, Level 4 Autonomy</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="timeline-item">
+                    <a href="honors.html">
+                        <img src="assets/img/milestone2.jpg" alt="Technical Citation 2019">
+                        <div class="item-details">
+                            <h3>Technical Citation 2019</h3>
+                            <p>Awarded for exemplary contributions at IIT Bombay.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="scroll-right" class="scroll-button">→</button>
+        </div>
     </section>
 </body>
 </html>
